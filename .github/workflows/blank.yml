@@ -42,8 +42,8 @@ jobs:
         run: echo | openssl s_client -servername demo.mailcow.email -connect howtouselinux.com:443 2>/dev/null | openssl x509 -text
 
       - name: curl trzonnek.de
-        run: curl -v https://trzonnek.de
+        run: curl -v -I https://trzonnek.de
         
       - name: curl demo.mailcow.email
-        run: curl -v https://demo.mailcow.email
+        run: curl -v -I https://demo.mailcow.email
 
