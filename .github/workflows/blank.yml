@@ -35,10 +35,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
+      - name: curl trzonnek.de
+        run: |
+          curl https://trzonnek.de
+
       - name: curl mailcow demo
         run: |
           curl https://demo.mailcow.email
 
-      - name: curl trzonnek.de
-        run: |
-          curl https://trzonnek.de
